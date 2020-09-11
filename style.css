@@ -115,7 +115,6 @@ body {
   visibility: hidden;
   height: 100%;
   width: 100%;
-  backface-visibility: hidden;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -134,8 +133,7 @@ body {
     border-radius: 4px;
     position: relative; }
   .popup:target {
-    visibility: visible;
-    opacity: 1; }
+    visibility: visible; }
 
 .btn--close {
   position: absolute;
@@ -159,7 +157,7 @@ body {
   .card-child {
     height: 100%;
     width: 100%;
-    transition: all 0.8s; }
+    transition: transform 0.8s; }
   .card:hover .card-child {
     transform: scale(1.2);
     filter: blur(1px) brightness(0.7);
@@ -197,3 +195,17 @@ body {
 .bg-3 {
   background-image: url(./img/pancakes-2291908_1920.jpg);
   background-size: cover; }
+
+.footer {
+  display: flex;
+  flex-flow: column; }
+  .footer__logo-box {
+    display: flex;
+    margin: 3rem auto 0;
+    align-items: center; }
+  .footer__logo {
+    width: 6rem;
+    margin: 0 2rem; }
+  .footer__main {
+    display: flex;
+    margin-top: 3rem; }
